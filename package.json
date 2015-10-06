@@ -8,11 +8,11 @@
     "name": "Roy Peled",
     "email": "royp@folloze.com"
   },
-  "homepage": "https://github.com/roypeled/zip-it-loader",
-  "bugs": "https://github.com/roypeled/zip-it-loader/issues",
+  "homepage": "https://github.com/roypeled/add-ff-exports",
+  "bugs": "https://github.com/roypeled/add-ff-exports/issues",
   "repository": {
     "type": "git",
-    "url": "git@github.com:roypeled/zip-it-loader.git"
+    "url": "git@github.com:roypeled/add-ff-exports.git"
   },
   "license": "MIT",
   "bin": {
