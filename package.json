@@ -1,0 +1,21 @@
+{
+  "name": "add-exports",
+  "version": "0.0.1",
+  "description": "add exports var to extension.js",
+  "main": "add-exports.js",
+  "keywords": [],
+  "author": {
+    "name": "Roy Peled",
+    "email": "royp@folloze.com"
+  },
+  "homepage": "https://github.com/roypeled/zip-it-loader",
+  "bugs": "https://github.com/roypeled/zip-it-loader/issues",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:roypeled/zip-it-loader.git"
+  },
+  "license": "MIT",
+  "bin": {
+    "add-ff-exports" : "add-exports.js"
+  }
+}
