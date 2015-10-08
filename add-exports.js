@@ -2,18 +2,30 @@
 
 var fs = require('fs');
 
-var EXTENSION_FILE = "data/extension.js";
-var MANIFEST_FILE = "package.json";
+var EXTENSION_FILE = "extension.js";
+var EXTENSION_FF_FILE = "data/extension.js";
+var BACKGROUND_FILE = "background.js";
 
-function addExports() {
-	console.log("Adding exports");
-    var data = fs.readFileSync(EXTENSION_FILE, 'utf-8');
+function addExports(file) {
+	console.log("Adding exports to", file);
+
+    try {
+        var stats = fs.lstatSync(file);
+    } catch(e){
+        console.log("can't find", file);
+        return;
+    }
+
+
+    var data = fs.readFileSync(file, 'utf-8');
     data = "var exports; " + data;
-    fs.writeFileSync(EXTENSION_FILE, data, 'utf-8');
+    fs.writeFileSync(file, data, 'utf-8');
     console.log("Success");
 };
 
 
-addExports();
+addExports(EXTENSION_FILE);
+addExports(EXTENSION_FF_FILE);
+addExports(BACKGROUND_FILE);
 
 
