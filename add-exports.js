@@ -42,7 +42,7 @@ function renameSourceMaps(file){
 
     var mapRoot = "chrome-extension://" + manifest.key + "/";
 
-    data = data.replace(/sourceMappingURL\=/gi, "sourceMappingURL=" + mapRoot);\
+    data = data.replace(/sourceMappingURL\=/gi, "sourceMappingURL=" + mapRoot);
     fs.writeFileSync(file, data, 'utf-8');
     console.log("Success");
 }
